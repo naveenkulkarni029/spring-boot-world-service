@@ -26,7 +26,6 @@ public class WorldController {
 	@GetMapping(value = "/world/list", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<ResponseList> worldList() {
 		List<City> cities = worldService.getCities();
-		// ResponseList citiesList = new ResponseList();
 		return ResponseEntity.ok(new ResponseList(cities));
 	}
 }

@@ -17,5 +17,4 @@ public class WorldServiceImpl implements WorldService{
 	public List<City> getCities() {
 		return worldRepository.findAll();
 	}
-
 }
