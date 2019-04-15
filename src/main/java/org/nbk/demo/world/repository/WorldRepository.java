@@ -19,6 +19,4 @@ public class WorldRepository{
 		Session currentSession = entityManager.unwrap(Session.class);
 		return currentSession.createQuery("from city", City.class).getResultList();
 	}
-
-	
 }
